@@ -1,0 +1,4 @@
+ /* Estilo para adicionar margem à esquerda dos parágrafos */
+.p {
+    margin-left: 20px; /* Altere o valor conforme necessário */
+}
