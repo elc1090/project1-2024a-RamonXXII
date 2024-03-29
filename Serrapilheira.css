@@ -1,4 +1,14 @@
- /* Estilo para adicionar margem à esquerda dos parágrafos */
-.p {
-    margin-left: 20px; /* Altere o valor conforme necessário */
+.footer {
+    margin-top: 20px; 
+}
+
+.redes-sociais li {
+    display: inline-block;
+    margin-right: 20px; /* Espaçamento entre os ícones */
+    padding: 5px; /* Espaçamento interno dentro da borda */
+    border: 1px solid #ccc; /* Adiciona uma borda aos ícones */
+    border-radius: 50%; /* Bordas arredondadas para criar um efeito de círculo */
+}
+.redes-sociais li:last-child{
+    margin-right: 0;
 }

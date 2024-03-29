@@ -4,13 +4,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Remake Serrapilheira</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="Serrapilheira.css">
 
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mb-5 ">
+            <div class="container border rounded-pill border-black">
                 <a class="navbar-brand" href="#">
                     <img src="https://serrapilheira.wpenginepowered.com/wp-content/uploads/2020/06/marca-200_.png" data-retina="https://serrapilheira.org/wp-content/uploads/2020/06/marca-600_.png" data-height="35" alt="logo Serrapilheira" data-no-retina="">
                 </a>
@@ -45,18 +47,47 @@
         </nav>
     </header>
 
-    <section>
-        <div class="container mt-4">
-            <h1>Ciência</h1>
-            <p>O programa é focado em projetos que abordem perguntas fundamentais nas áreas de ciências naturais, ciência da computação e matemática. Desde 2018, já apoiou mais de 150 projetos de pesquisa.</p>
-        </div>
+    <main>
+        <section>
+            <div class="container mt-5 pt-2">
+                <h1>Ciência</h1>
+                <p>O programa é focado em projetos que abordem perguntas fundamentais nas áreas de ciências naturais, ciência da computação e matemática. Desde 2018, já apoiou mais de 150 projetos de pesquisa.</p>
+            </div>
+    
+            <div class= "container mt-4" id="listaPesquisadores">
+            </div>
+        </section>
 
-        <div class= "container mt-4" id="listaPesquisadores">
-            <p>bora ver no que da</p>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="copyright">
+                        © Instituto Serrapilheira. Todos os direitos reservados.
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-3 text-center">
+                    <ul class="redes-sociais">
+                        <li><a href="https://twitter.com/iserrapilheira"><i class="fab fa-lg fa-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/InstitutoSerrapilheira/"><i class="fab fa-lg fa-facebook"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCJdVJGN5RBpaNl8lWqBMpjQ"><i class="fab fa-lg fa-youtube"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/instituto-serrapilheira"><i class="fab fa-lg fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/institutoserrapilheira/"><i class="fab fa-lg fa-instagram"></i></a></li>
+                        <li><a href="https://www.tiktok.com/@iserrapilheira"><i class="fab fa-lg fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 text-end">
+                    <button aria-label="Ir para o topo da página" id="btnScrollToTop">Ir para o topo</button>                    
+                </div>
+            </div>
         </div>
-    </section>
-        
+    </footer>
+  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
     <script src="./scrap.js"></script>
 
 </body>
