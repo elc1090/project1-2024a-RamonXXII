@@ -54,10 +54,13 @@
                 <p>O programa é focado em projetos que abordem perguntas fundamentais nas áreas de ciências naturais, ciência da computação e matemática. Desde 2018, já apoiou mais de 150 projetos de pesquisa.</p>
             </div>
     
+            <input type="text" id="filtroPesquisa" placeholder="Pesquisar por área de pesquisa">
             <div class= "container mt-4" id="listaPesquisadores">
             </div>
         </section>
-
+        <button class="btn-home text-center" aria-label="Ir para o topo da página" id="btnScrollToTop">
+            <i class="fas fa-home"></i>
+        </button>
     </main>
 
     <footer class="footer">
@@ -78,17 +81,18 @@
                         <li><a href="https://www.tiktok.com/@iserrapilheira"><i class="fab fa-lg fa-tiktok"></i></a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-3 text-end">
-                    <button aria-label="Ir para o topo da página" id="btnScrollToTop">Ir para o topo</button>                    
-                </div>
+                
             </div>
         </div>
     </footer>
   
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 
-    <script src="./scrap.js"></script>
+    <script type="module" src="./filtro.js"></script>
 
 </body>
 </html>
