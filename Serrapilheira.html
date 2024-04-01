@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <link rel="stylesheet" href="Serrapilheira.css">
+    <link rel="stylesheet" href="cores.css">
+
+    <link rel="icon" href="https://serrapilheira.wpenginepowered.com/wp-content/uploads/2020/03/favicon-50x50.png" sizes="32x32" />
 
 </head>
 <body>
@@ -40,7 +43,11 @@
                         <li class="nav-item"></li>
                             <a class="nav-link" href="#">EN</a>
                         </li>
-
+                        <li class="nav-item float-end">
+                            <button class="btn-home " aria-label="Ir para o topo da página" id="btnScrollToTop">
+                                <i class="fas fa-home"></i>
+                            </button>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -52,15 +59,23 @@
             <div class="container mt-5 pt-2">
                 <h1>Ciência</h1>
                 <p>O programa é focado em projetos que abordem perguntas fundamentais nas áreas de ciências naturais, ciência da computação e matemática. Desde 2018, já apoiou mais de 150 projetos de pesquisa.</p>
+                
+                <div class="d-flex">
+                    <div class="custom-search">
+                        <input type="text" id="filtroPesquisa" placeholder="Pesquisar por área de pesquisa">
+                    </div>
+                    <button aria-label="Selecione o ano" id="filtroAno">
+                        <i class="fas fa-filter"></i>
+                    </button>
+
+                </div>
+                
             </div>
     
-            <input type="text" id="filtroPesquisa" placeholder="Pesquisar por área de pesquisa">
             <div class= "container mt-4" id="listaPesquisadores">
             </div>
         </section>
-        <button class="btn-home text-center" aria-label="Ir para o topo da página" id="btnScrollToTop">
-            <i class="fas fa-home"></i>
-        </button>
+        
     </main>
 
     <footer class="footer">

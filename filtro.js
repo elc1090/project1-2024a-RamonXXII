@@ -16,7 +16,9 @@ function criarListaPesquisadores(filtro) {
 }
 
 
-
+function removerAcentos(texto) {
+    return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
 
 
 function gerarListaHTML(scrap, filtro) {
@@ -37,20 +39,15 @@ function gerarListaHTML(scrap, filtro) {
     var listaHTML = '';
     filtro = filtro.trim().toLowerCase();
 
-    console.log(areas);
-    console.log("filtro:",filtro);
-    console.log(areas.includes(filtro));
-
-    
     // Itera sobre as áreas únicas e cria um card para cada área
     Object.keys(pesquisadoresPorArea).forEach(function(area) {
+        var Newarea = removerAcentos(area.toLowerCase());
         
-        if(filtro===""|| area.toLowerCase().includes(filtro)){
+        if(filtro===""|| Newarea.includes(filtro)){
             listaHTML += '<div class="card">';
             listaHTML += '<div class="card-header"><b>' + area + '</b></div>';
             listaHTML += '<div class="card-body">';
             listaHTML += '<div class="row">';
-
 
             pesquisadoresPorArea[area].forEach(function(pesquisador) {
                 listaHTML += '<div class="col col-lg-3 col-md-4 col-sm-6">';
@@ -68,30 +65,6 @@ function gerarListaHTML(scrap, filtro) {
 
     return listaHTML;
 
-
-    scrap.forEach(function(pesquisador) {
-        var area = pesquisador.area.trim().toLowerCase();
-        filtro = filtro.trim().toLowerCase();
-        
-        // Verifica se o filtro está vazio ou se a área de pesquisa do pesquisador corresponde ao filtro
-        if (filtro == "" || area.includes(filtro)) {
-            listaHTML += '<div class="card mb-3">';
-            listaHTML += '<div class="card-header"><h5 class="mb-0">' + pesquisador.area + '</h5></div>';
-            listaHTML += '<div class="card-body">';
-
-            listaHTML += '<div class="row">';
-            listaHTML += '<div class="col-lg-3 col-md-4 col-sm-6 mb-3">';
-            listaHTML += '<div class="card">';
-            listaHTML += '<img src="' + pesquisador.img + '" class="card-img-top" alt="' + pesquisador.nome + '" title="' + pesquisador.nome + '">';
-            listaHTML += '<div class="card-body">';
-            listaHTML += '<h5 class="card-title">' + pesquisador.nome + '</h5>';
-            listaHTML += '<p class="card-text">' + pesquisador.projeto + '</p>';
-            listaHTML += '<a href="' + pesquisador.href + '" class="btn btn-primary">Detalhes</a>';
-            listaHTML += '</div></div></div></div></div></div>';
-        }
-    });
-
-    return listaHTML;
 }
 
 // Função para atualizar a lista de pesquisadores com base no filtro de pesquisa

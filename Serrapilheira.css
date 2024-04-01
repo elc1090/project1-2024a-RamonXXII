@@ -1,22 +1,26 @@
+body {
+    background-image: url("./4880172.jpg");
+    background-size: cover;
+    background-position: center; 
+    
+}
+
 .footer {
     margin-top: 20px; 
 }
 
 .redes-sociais li {
     display: inline-block;
-    margin-right: 20px; /* Espaçamento entre os ícones */
-    padding: 5px; /* Espaçamento interno dentro da borda */
-    border: 1px solid #ccc; /* Adiciona uma borda aos ícones */
-    border-radius: 50%; /* Bordas arredondadas para criar um efeito de círculo */
+    margin-right: 20px; 
+    padding: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 50%; 
 }
 .redes-sociais li:last-child{
     margin-right: 0;
 }
 
 .btn-home {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -28,3 +32,34 @@
     text-align: center;
     cursor: pointer;
 }
+
+.custom-search {
+    position: relative;
+    display: inline-block;
+}
+
+#filtroPesquisa {
+    padding-right: 40px; /* Espaçamento para o ícone */
+    width: 100%; /* Preenchimento total da largura disponível */
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: #666;
+    cursor: pointer;
+}
+
+/* Estilo para o ícone */
+.search-icon i {
+    font-size: 20px;
+}
+
+.card-text{
+    max-height: calc(1.2em * 6); /* Altura máxima de 5 linhas */
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando o conteúdo ultrapassa a altura máxima */
+    scrollbar-width: thin;
+}
+
