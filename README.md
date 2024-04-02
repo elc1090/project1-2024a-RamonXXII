@@ -17,9 +17,7 @@
 
 ## Como Usar
 
-1. Clone este repositório em seu ambiente de desenvolvimento local:
-
-2. Acesse o link onde está o deploy via GitHub Pages para HTML estático: [Remake Serrapilheira](https://elc1090.github.io/project1-2024a-RamonXXII/)
-3. Digite uma palavra-chave da área de seu interesse na caixa de pesquisa para filtrar os pesquisadores por área de pesquisa.
-4. Selecione um ano no dropdown para filtrar os pesquisadores por ano.
-5. O HTML gerado será exibido na seção abaixo dos controles.
+1. Acesse o link onde está o deploy via GitHub Pages para HTML estático: [Remake Serrapilheira](https://elc1090.github.io/project1-2024a-RamonXXII/)
+2. Digite uma palavra-chave da área de seu interesse na caixa de pesquisa para filtrar os pesquisadores por área de pesquisa.
+3. Selecione um ano no dropdown para filtrar os pesquisadores por ano.
+4. O HTML gerado será exibido na seção abaixo dos controles.
